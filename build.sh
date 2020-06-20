@@ -3,6 +3,7 @@
 echo 'Log available at "build.log"'
 echo '' > build.log
 
+pod install
 
 /bin/mkdir -p ./Output/
 /bin/rm -rf ./Output/*
