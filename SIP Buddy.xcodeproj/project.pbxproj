@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,9 +11,12 @@
 		8A00A45B249DD0160010DECD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00A45A249DD0160010DECD /* ViewController.swift */; };
 		8A00A45D249DD0180010DECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A00A45C249DD0180010DECD /* Assets.xcassets */; };
 		8A00A460249DD0180010DECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A00A45E249DD0180010DECD /* Main.storyboard */; };
+		8A00A469249DD3050010DECD /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00A468249DD3050010DECD /* Status.swift */; };
+		91395BCCD639FEBD0D8A1B18 /* Pods_SIP_Buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495A1FB6149182E3366458E3 /* Pods_SIP_Buddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		495A1FB6149182E3366458E3 /* Pods_SIP_Buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIP_Buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A00A455249DD0160010DECD /* SIP Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SIP Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A00A458249DD0160010DECD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A00A45A249DD0160010DECD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +24,10 @@
 		8A00A45F249DD0180010DECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A00A461249DD0180010DECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A00A462249DD0180010DECD /* SIP_Buddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SIP_Buddy.entitlements; sourceTree = "<group>"; };
+		8A00A468249DD3050010DECD /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		8A00A46A249DD8F00010DECD /* SIP_Buddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SIP_Buddy-Bridging-Header.h"; sourceTree = "<group>"; };
+		A34E30D8030D0ADE10C2C8E7 /* Pods-SIP Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIP Buddy.debug.xcconfig"; path = "Target Support Files/Pods-SIP Buddy/Pods-SIP Buddy.debug.xcconfig"; sourceTree = "<group>"; };
+		C7BEA30BF71321D2D73DAF58 /* Pods-SIP Buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIP Buddy.release.xcconfig"; path = "Target Support Files/Pods-SIP Buddy/Pods-SIP Buddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91395BCCD639FEBD0D8A1B18 /* Pods_SIP_Buddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D41C4DC2EEF72158EBE4DCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				495A1FB6149182E3366458E3 /* Pods_SIP_Buddy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A00A44C249DD0160010DECD = {
 			isa = PBXGroup;
 			children = (
 				8A00A457249DD0160010DECD /* SIP Buddy */,
 				8A00A456249DD0160010DECD /* Products */,
+				B33A15C25BF23E3861A26B94 /* Pods */,
+				0D41C4DC2EEF72158EBE4DCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,8 +77,19 @@
 				8A00A45E249DD0180010DECD /* Main.storyboard */,
 				8A00A461249DD0180010DECD /* Info.plist */,
 				8A00A462249DD0180010DECD /* SIP_Buddy.entitlements */,
+				8A00A468249DD3050010DECD /* Status.swift */,
+				8A00A46A249DD8F00010DECD /* SIP_Buddy-Bridging-Header.h */,
 			);
 			path = "SIP Buddy";
+			sourceTree = "<group>";
+		};
+		B33A15C25BF23E3861A26B94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A34E30D8030D0ADE10C2C8E7 /* Pods-SIP Buddy.debug.xcconfig */,
+				C7BEA30BF71321D2D73DAF58 /* Pods-SIP Buddy.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A00A465249DD0180010DECD /* Build configuration list for PBXNativeTarget "SIP Buddy" */;
 			buildPhases = (
+				1D0AD093578FAC5BBFFC0BDE /* [CP] Check Pods Manifest.lock */,
 				8A00A451249DD0160010DECD /* Sources */,
 				8A00A452249DD0160010DECD /* Frameworks */,
 				8A00A453249DD0160010DECD /* Resources */,
+				386F515BB3223FC658D837A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +159,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D0AD093578FAC5BBFFC0BDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SIP Buddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		386F515BB3223FC658D837A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SIP Buddy/Pods-SIP Buddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SIP Buddy/Pods-SIP Buddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SIP Buddy/Pods-SIP Buddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A00A451249DD0160010DECD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -135,6 +208,7 @@
 			files = (
 				8A00A45B249DD0160010DECD /* ViewController.swift in Sources */,
 				8A00A459249DD0160010DECD /* AppDelegate.swift in Sources */,
+				8A00A469249DD3050010DECD /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +341,7 @@
 		};
 		8A00A466249DD0180010DECD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A34E30D8030D0ADE10C2C8E7 /* Pods-SIP Buddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "SIP Buddy/SIP_Buddy.entitlements";
@@ -281,12 +356,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "kbrleson.SIP-Buddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SIP Buddy/SIP_Buddy-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		8A00A467249DD0180010DECD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7BEA30BF71321D2D73DAF58 /* Pods-SIP Buddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "SIP Buddy/SIP_Buddy.entitlements";
@@ -301,6 +378,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "kbrleson.SIP-Buddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SIP Buddy/SIP_Buddy-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

@@ -1,0 +1,16 @@
+PODS:
+  - STPrivilegedTask (1.0.1)
+
+DEPENDENCIES:
+  - STPrivilegedTask
+
+SPEC REPOS:
+  trunk:
+    - STPrivilegedTask
+
+SPEC CHECKSUMS:
+  STPrivilegedTask: 103f97827454e786074640cf89d303be344498c7
+
+PODFILE CHECKSUM: d3be06dcf4514f5102421d213d1f20c046cd2203
+
+COCOAPODS: 1.9.1
