@@ -1,2 +1,4 @@
 Pods/
 .DS_Store
+Output/
+build.log
